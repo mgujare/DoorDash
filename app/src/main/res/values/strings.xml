@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Doordash</string>
+    <string name="title_home">Discover</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="error_loading_content">Error. \n Try Again.</string>
+    <string name="restaurant_status_closed">Closed</string>
+    <string name="delivery_asap_time_unit">mins</string>
+</resources>
