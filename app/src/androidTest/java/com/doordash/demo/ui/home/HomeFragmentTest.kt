@@ -16,7 +16,7 @@ class HomeFragmentTest {
 
     @Test
     fun testHomeFragmentDefaultViews() {
-        // Assumes that "MyDialogFragment" extends the DialogFragment class.
+        
         with(launchFragment<HomeFragment>()) {
             onFragment { fragment ->
                 //RecyclerView is present
