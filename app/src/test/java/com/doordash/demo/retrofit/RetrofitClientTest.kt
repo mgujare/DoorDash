@@ -2,7 +2,7 @@ package com.doordash.demo.retrofit
 
 import org.junit.Assert
 import org.junit.Test
-import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 
 class RetrofitClientTest {
 
@@ -18,7 +18,7 @@ class RetrofitClientTest {
     fun testRetrofitInstanceFactories() {
         Assert.assertFalse(retrofitClient.callAdapterFactories().isEmpty())
         Assert.assertFalse(retrofitClient.converterFactories().isEmpty())
-        Assert.assertTrue(retrofitClient.callAdapterFactories()[0] is RxJavaCallAdapterFactory)
+        Assert.assertTrue(retrofitClient.callAdapterFactories()[0] is RxJava2CallAdapterFactory)
     }
 
 }

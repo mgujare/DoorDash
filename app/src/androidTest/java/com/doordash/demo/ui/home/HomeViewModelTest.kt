@@ -1,5 +1,6 @@
 package com.doordash.demo.ui.home
 
+import android.app.Application
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.doordash.demo.model.Restaurant
@@ -23,11 +24,12 @@ class HomeViewModelTest {
 
     @Before
     fun initViewModel() {
+        val ap = androidx.test.core.app.ApplicationProvider.getApplicationContext<Application>()
         var restaurant = Restaurant("AB", "Desc 1", 40)
         restaurants.add(restaurant)
         restaurant = Restaurant("CD", "Desc 2", 50)
         restaurants.add(restaurant)
-        viewModel = HomeViewModel()
+        viewModel = HomeViewModel(application = ap)
     }
 
     @Test
