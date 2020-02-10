@@ -65,7 +65,7 @@ class HomeFragment : Fragment() {
 
         //Observe LiveData updates.
         homeViewModel.getRestaurantList()?.observe(this, Observer<HomeViewModel.RestaurantLiveData> {
-            if (!it.isError) {
+            if (!it.isError && !it.restaurantLiveList.isNullOrEmpty()) {
                 (restaurantList?.adapter as RestaurantAdapter).updateList(ArrayList(it.restaurantLiveList))
 
             } else {

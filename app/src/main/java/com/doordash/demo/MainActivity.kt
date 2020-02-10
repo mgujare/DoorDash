@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
         setNavigationListener()
         bottomNavigationView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
         bottomNavigationView.selectedItemId = R.id.navigation_home
-
     }
 
     private fun getFragmentTag(id:Int): String {
